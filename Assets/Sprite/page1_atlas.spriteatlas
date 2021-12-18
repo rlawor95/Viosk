@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: page1_atlas
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings: []
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 1
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: d18136d2cf71c4511afd5fe1077ed6c1, type: 3}
+    - {fileID: 102900000, guid: 616b471139ed34b4bb30c4cdd66ce10f, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 79376830bcf124ba1ada5e76e8bd0d4b, type: 3}
+  - {fileID: 21300000, guid: ae782370c1c6342adbbdeb7d1fe40768, type: 3}
+  - {fileID: 21300000, guid: 91b706704a8f44955a4b55650837b37f, type: 3}
+  - {fileID: 21300000, guid: 8183e0e018a16497db6c35062082e846, type: 3}
+  - {fileID: 21300000, guid: 3399485105a5c4eb0a8fb0ffc225dd28, type: 3}
+  - {fileID: 21300000, guid: 9499b4f2577b14dbeb626c4d4d05c6ef, type: 3}
+  - {fileID: 21300000, guid: 6c4efd03ce0294f00b3a4ac0d6807bc7, type: 3}
+  - {fileID: 21300000, guid: b5ea583498d3f45debb1cbf3793d39ee, type: 3}
+  - {fileID: 21300000, guid: bf32bb05490e141ab8909c3d964436d3, type: 3}
+  - {fileID: 21300000, guid: a9e33156f675e484ca51d65c2c77bf76, type: 3}
+  - {fileID: 21300000, guid: e7f6521761818408d8e26280c838eca8, type: 3}
+  - {fileID: 21300000, guid: 89b921c8fb25648b28f554003f126603, type: 3}
+  - {fileID: 21300000, guid: a7ef5d5ad58ec4e488122826d3319484, type: 3}
+  - {fileID: 21300000, guid: c354beca9dd98431381927bb989a027e, type: 3}
+  - {fileID: 21300000, guid: 8522a0fb2fee8449193415f590d2ef26, type: 3}
+  - {fileID: 21300000, guid: aefb473c7ca7d49a39b6e7e0fc0d0184, type: 3}
+  - {fileID: 21300000, guid: 41459e4c7345b48449d877af84f66c14, type: 3}
+  - {fileID: 21300000, guid: 0de709dd14cbf4beea5492a645e8c0e2, type: 3}
+  - {fileID: 21300000, guid: 2e079cddd4b42425fb095f36f1bba478, type: 3}
+  - {fileID: 21300000, guid: f2f508ce1fa054d3fb8c06e88dbea841, type: 3}
+  - {fileID: 21300000, guid: 25f396ee39f5e4e4fac8529514fc47cb, type: 3}
+  - {fileID: 21300000, guid: 3d2fa41fc74ad4c28b0f64d78f4792fd, type: 3}
+  - {fileID: 21300000, guid: c26ca6bfff83346d4ae5ef17fcd1b24c, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - icon_flag_1
+  - icon_footer_3
+  - icon_flag_2
+  - small_burger_1_2
+  - btn_age_1
+  - btn_arrow_1
+  - select_icon_flag_4
+  - btn_close
+  - small_burger_1_3
+  - small_burger_1_4
+  - btn_age_2
+  - btn_arrow_2
+  - select_icon_flag_3
+  - small_burger_1_5
+  - icon_flag_4
+  - icon_flag_3
+  - select_btn_age_2
+  - select_icon_flag_2
+  - small_burger_1_1
+  - icon_footer_1
+  - icon_footer_2
+  - select_btn_age_1
+  - select_icon_flag_1
+  m_Tag: page1_atlas
+  m_IsVariant: 0
