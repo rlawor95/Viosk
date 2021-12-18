@@ -12,6 +12,11 @@ public class MenuList : MonoBehaviour
     public static MenuList Instance = null;
 
     public MenuObject menuObject;
+    public GameObject Content;
+
+    public MenuDatabase menuDB;
+
+    
 
     List<MenuObject> menuobjPoolingList = new List<MenuObject>();
 
@@ -27,9 +32,11 @@ public class MenuList : MonoBehaviour
         {
             var go = Instantiate(menuObject.gameObject).GetComponent<MenuObject>();
             go.gameObject.SetActive(false);
+            go.transform.parent = Content.transform;
         }
 
-        OpenMenu(MenuType.Recommend);
+        
+        //OpenMenu(MenuType.Recommend);
     }
 
     public void OpenMenu(MenuType type)
@@ -40,9 +47,22 @@ public class MenuList : MonoBehaviour
                 int cnt = 5;
                 for (int i = 0; i < cnt; i++)
                 {
-                    
+                    //var item = ReturnObjFromPooling();
+                    //item.SetInfo("추천"+(char)46+i, )
                 }
                 break;
         }
+    }
+
+    MenuObject ReturnObjFromPooling()
+    {
+        foreach (var item in menuobjPoolingList)
+        {
+            if (item.gameObject.activeSelf == false)
+                return item;
+        }
+
+        Debug.LogError("Pooling Error");
+        return null;    
     }
 }

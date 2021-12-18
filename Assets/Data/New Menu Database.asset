@@ -1,0 +1,80 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1128a44f5bab14470afc3186d4f913ec, type: 3}
+  m_Name: New Menu Database
+  m_EditorClassIdentifier: 
+  MenuCategory:
+  - CategoryName: Recommend
+    MenuArray:
+    - Spritename: 
+      Name: "\uCD94\uCC9C A"
+      Price: 12200
+    - Spritename: 
+      Name: "\uCD94\uCC9C B"
+      Price: 11200
+    - Spritename: 
+      Name: "\uCD94\uCC9C C"
+      Price: 9800
+    - Spritename: 
+      Name: "\uCD94\uCC9C D"
+      Price: 9800
+    - Spritename: 
+      Name: "\uCD94\uCC9C E"
+      Price: 9000
+  - CategoryName: Limited
+    MenuArray:
+    - Spritename: 
+      Name: "\uAE30\uAC04 A"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 B"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 C"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 D"
+      Price: 11500
+    - Spritename: 
+      Name: "\uAE30\uAC04 E"
+      Price: 10500
+    - Spritename: 
+      Name: "\uAE30\uAC04 F"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 G"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 H"
+      Price: 12500
+    - Spritename: 
+      Name: "\uAE30\uAC04 I"
+      Price: 14500
+    - Spritename: 
+      Name: "\uAE30\uAC04 J"
+      Price: 15500
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
+  - CategoryName: 
+    MenuArray: []
