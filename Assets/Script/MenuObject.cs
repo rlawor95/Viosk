@@ -3,8 +3,10 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public struct OrderInfo
 {
+    public int ID;
     public string name;
     public int price;
 }

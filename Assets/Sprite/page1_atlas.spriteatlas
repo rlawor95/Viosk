@@ -38,6 +38,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: 79376830bcf124ba1ada5e76e8bd0d4b, type: 3}
   - {fileID: 21300000, guid: ae782370c1c6342adbbdeb7d1fe40768, type: 3}
   - {fileID: 21300000, guid: 91b706704a8f44955a4b55650837b37f, type: 3}
+  - {fileID: 21300000, guid: 2bead3900b9c141ba98e13e44436ff53, type: 3}
   - {fileID: 21300000, guid: 8183e0e018a16497db6c35062082e846, type: 3}
   - {fileID: 21300000, guid: 3399485105a5c4eb0a8fb0ffc225dd28, type: 3}
   - {fileID: 21300000, guid: 9499b4f2577b14dbeb626c4d4d05c6ef, type: 3}
@@ -46,6 +47,7 @@ SpriteAtlas:
   - {fileID: 21300000, guid: bf32bb05490e141ab8909c3d964436d3, type: 3}
   - {fileID: 21300000, guid: a9e33156f675e484ca51d65c2c77bf76, type: 3}
   - {fileID: 21300000, guid: e7f6521761818408d8e26280c838eca8, type: 3}
+  - {fileID: 21300000, guid: edaf19170c41d43fd857b588abeddde7, type: 3}
   - {fileID: 21300000, guid: 89b921c8fb25648b28f554003f126603, type: 3}
   - {fileID: 21300000, guid: a7ef5d5ad58ec4e488122826d3319484, type: 3}
   - {fileID: 21300000, guid: c354beca9dd98431381927bb989a027e, type: 3}
@@ -62,6 +64,7 @@ SpriteAtlas:
   - icon_flag_1
   - icon_footer_3
   - icon_flag_2
+  - select-red-line
   - small_burger_1_2
   - btn_age_1
   - btn_arrow_1
@@ -70,6 +73,7 @@ SpriteAtlas:
   - small_burger_1_3
   - small_burger_1_4
   - btn_age_2
+  - tab-line
   - btn_arrow_2
   - select_icon_flag_3
   - small_burger_1_5

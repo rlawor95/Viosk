@@ -14,11 +14,18 @@ public class OrderObject : MonoBehaviour
     {
         UGUI_nameText.text = info.name;
         UGUI_priceText.text = info.price.ToString() + "원";
-        _info = info;
+        _info.ID = info.ID;
+        _info.name = info.name;
+        _info.price = info.price;
     }
 
     public void RemoveClickEvent()
     {
         OrderedList.Instance.RemoveOrder(_info);
+    }
+
+    public OrderInfo GetInfo()
+    {
+        return _info;
     }
 }
