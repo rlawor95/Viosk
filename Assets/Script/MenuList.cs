@@ -2,17 +2,21 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+public enum MenuType
+{
+    Recommend, Limited, Set, BugerOnly, Side
+}
+
 public class MenuList : MonoBehaviour
 {
-    public enum MenuType
-    {
-        Recommend, Limited, Set, BugerOnly, Side
-    }
+ 
 
     public static MenuList Instance = null;
 
     public MenuObject menuObject;
     public GameObject Content;
+    public RectTransform RedLine;
+    public RectTransform[] CategoryTxt;
 
     public MenuDatabase menuDB;
 
@@ -45,11 +49,19 @@ public class MenuList : MonoBehaviour
 
         OpenMenu(MenuType.Recommend);
     }
+    
+    public void CategoryBtnClickEvent(int type)
+    {
+        OpenMenu((MenuType)type);
+
+        RedLine.anchoredPosition = new Vector2(CategoryTxt[type].anchoredPosition.x, RedLine.anchoredPosition.y);
+    }
+
 
     public void OpenMenu(MenuType type)
     {
         DisableObjects();
-        
+
         switch (type)
         {
             case MenuType.Recommend:
@@ -58,6 +70,14 @@ public class MenuList : MonoBehaviour
                     var go = ReturnObjFromPooling();
                     go.SetInfo(item.Name, item.Price);
                 }
+                break;
+            case MenuType.Limited://Limited
+                foreach (var item in MenuDic["Limited"])
+                {
+                    var go = ReturnObjFromPooling();
+                    go.SetInfo(item.Name, item.Price);
+                }
+
                 break;
         }
     }

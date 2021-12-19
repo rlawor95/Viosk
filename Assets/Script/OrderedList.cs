@@ -22,6 +22,8 @@ public class OrderedList : MonoBehaviour
             Instance = this;
     }
 
+  
+
     public void AddOrder(OrderInfo order)
     {
         order.ID = orderCount;
