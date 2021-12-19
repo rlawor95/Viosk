@@ -11,7 +11,7 @@ public class AddMenuMgr : MonoBehaviour
     public Image SelectionMenuImage;
     public Text SelectionMenuNameTxt;
     public Text SelectionMenuPriceTxt;
-    private string _selectionName;
+
     private int _selectionPrice;
 
     public GameObject AddMenuPrefab;
@@ -20,9 +20,12 @@ public class AddMenuMgr : MonoBehaviour
     public GameObject FryContent;
     public GameObject DrinkContent;
     public GameObject SauceContent;
+    public GameObject SizeContent;
 
 
     public Text TotalPriceTxt;
+
+    int curPrice = 0;
 
     void Awake()
     {
@@ -34,14 +37,37 @@ public class AddMenuMgr : MonoBehaviour
 
     void Start()
     {
-        foreach (var item in MenuList.Instance.MenuDic["Gradiant"])
+        AddMenuLoad("Gradiant", GradiantContent.transform);
+        AddMenuLoad("Fry", FryContent.transform);
+        AddMenuLoad("Drink", DrinkContent.transform);
+        AddMenuLoad("Sauce", SauceContent.transform);
+        AddMenuLoad("Size", SizeContent.transform);
+    }
+
+    void AddMenuLoad(string key, Transform content)
+    {
+        foreach (var item in MenuList.Instance.MenuDic[key])
         {
             var go = Instantiate(AddMenuPrefab).GetComponent<AddMenuObject>();
             string name = item.Name + "\n" + "+" + item.Price.ToString();
             go.SetInfo(name, item.Price, item.smallSprite);
-            go.transform.parent = GradiantContent.transform;
+            go.transform.parent = content.transform;
             go.gameObject.SetActive(true);
         }
+    }
+
+    public void CheckingAdditionMenu(bool b, int price)
+    {
+        if (b)
+        {
+            curPrice += price;
+        }
+        else
+        {
+            curPrice -= price;
+        }
+
+        TotalPriceTxt.text = curPrice.ToString() + "원";
     }
 
     public void Init(Sprite _sprite, string name, int price)
@@ -51,18 +77,16 @@ public class AddMenuMgr : MonoBehaviour
         SelectionMenuNameTxt.text = name;
         SelectionMenuPriceTxt.text = price.ToString()+"원";
 
-        //Gradiant 
-         foreach (var item in MenuList.Instance.MenuDic["Gradiant"])
-         {
+        TotalPriceTxt.text = SelectionMenuPriceTxt.text;
+        curPrice = price;
 
-         }
     }
 
     public void OkBtnClickEvent()
     {
         OrderInfo _info = new OrderInfo();
-        _info.name = _selectionName;
-        _info.price = _selectionPrice;
+        _info.name = SelectionMenuNameTxt.text;
+        _info.price = curPrice;
         OrderedList.Instance.AddOrder(_info);
         Panel.SetActive(false);
     }

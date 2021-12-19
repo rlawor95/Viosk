@@ -20,6 +20,7 @@ public class CustomBtn : MonoBehaviour
         _img = GetComponent<Image>();
         SetSprite();
         
+        GetComponent<Button>().onClick.AddListener(()=>BtnClickEvent());
     }
 
     public void BtnClickEvent()

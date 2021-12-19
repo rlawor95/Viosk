@@ -7,6 +7,7 @@ public class AddMenuObject : MonoBehaviour
 {
     public Image Icon;
     public Text infoTxt;
+    public Image CheckImg;
 
 
     public int Price = 0;
@@ -18,5 +19,18 @@ public class AddMenuObject : MonoBehaviour
             Icon.sprite = _icon;
 
         Price = price;
+    }
+
+    public void ClickEvent()
+    {
+        bool b = !CheckImg.gameObject.activeSelf;
+        CheckImg.gameObject.SetActive(b);
+
+        AddMenuMgr.Instance.CheckingAdditionMenu(b, Price);
+    }
+
+    void OnDisable()
+    {
+        CheckImg.gameObject.SetActive(false);
     }
 }
