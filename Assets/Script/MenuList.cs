@@ -80,6 +80,15 @@ public class MenuList : MonoBehaviour
         }
 
          OpenMenu(MenuType.Recommend);
+
+          RedLine.anchoredPosition = new Vector2(CategoryTxt[0].anchoredPosition.x, RedLine.anchoredPosition.y);
+
+        foreach(var item in CategoryTxt)
+        {
+            item.GetComponent<Text>().color = Color.black;
+        }
+
+        CategoryTxt[0].GetComponent<Text>().color = Color.red;
     }
 
 
