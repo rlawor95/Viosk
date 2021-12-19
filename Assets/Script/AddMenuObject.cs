@@ -3,12 +3,29 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public struct AdditionMenu
+{
+    public Sprite Icon;
+    public string name;
+    public int price;
+
+
+    public AdditionMenu(Sprite _icon, string _name, int _price)
+    {
+        this.Icon = _icon;
+        this.name = _name;
+        this.price = _price;
+    }
+
+}
+
 public class AddMenuObject : MonoBehaviour
 {
     public Image Icon;
     public Text infoTxt;
     public Image CheckImg;
 
+    public AdditionMenu info;
 
     public int Price = 0;
 
@@ -21,12 +38,17 @@ public class AddMenuObject : MonoBehaviour
         Price = price;
     }
 
+    public void SetInfo(AdditionMenu menu)
+    {
+        info = menu;
+    }
+
     public void ClickEvent()
     {
         bool b = !CheckImg.gameObject.activeSelf;
         CheckImg.gameObject.SetActive(b);
 
-        AddMenuMgr.Instance.CheckingAdditionMenu(b, Price);
+        AddMenuMgr.Instance.CheckingAdditionMenu(b, info);
     }
 
     void OnDisable()

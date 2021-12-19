@@ -44,7 +44,22 @@ public class MenuList : MonoBehaviour
         foreach (var item in menuDB.MenuCategory)
         {
             MenuDic.Add(item.CategoryName, item.MenuArray);
-            Debug.Log("key : " + item.CategoryName + "  value count : " + item.MenuArray.Length);
+        }
+
+         for (int i = 0; i < 15; i++)
+        {
+            var go = Instantiate(SmallmenuObject.gameObject).GetComponent<MenuObject>();
+            go.gameObject.SetActive(false);
+            go.transform.parent = SmallContent.transform;
+            SmallmenuobjPoolingList.Add(go);
+        }
+
+        for (int i = 0; i < 15; i++)
+        {
+            var go = Instantiate(BigmenuObject.gameObject).GetComponent<MenuObject>();
+            go.gameObject.SetActive(false);
+            go.transform.parent = BigContent.transform;
+            BigmenuobjPoolingList.Add(go);
         }
     }
 
@@ -63,28 +78,14 @@ public class MenuList : MonoBehaviour
             BigContent.SetActive(false);
             _scrollRect.content = SmallContent.GetComponent<RectTransform>();
         }
+
+         OpenMenu(MenuType.Recommend);
     }
+
 
     void Start()
     {
-        for (int i = 0; i < 15; i++)
-        {
-            var go = Instantiate(SmallmenuObject.gameObject).GetComponent<MenuObject>();
-            go.gameObject.SetActive(false);
-            go.transform.parent = SmallContent.transform;
-            SmallmenuobjPoolingList.Add(go);
-        }
-
-        for (int i = 0; i < 15; i++)
-        {
-            var go = Instantiate(BigmenuObject.gameObject).GetComponent<MenuObject>();
-            go.gameObject.SetActive(false);
-            go.transform.parent = BigContent.transform;
-            BigmenuobjPoolingList.Add(go);
-        }
-
-
-        OpenMenu(MenuType.Recommend);
+       
     }
 
     public void CategoryBtnClickEvent(int type)

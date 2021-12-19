@@ -7,8 +7,11 @@ using UnityEngine.UI;
 public struct OrderInfo
 {
     public int ID;
+    public Sprite img;
     public string name;
     public int price;
+    public List<AdditionMenu> additionMenuList;
+    public int originPrice;
 }
 
 public class MenuObject : MonoBehaviour
@@ -37,14 +40,21 @@ public class MenuObject : MonoBehaviour
             UGUI_MenuImg.sprite = _icon;
             UGUI_MenuImg.SetNativeSize();
         }
-
+        _info.img = _icon;
         _info.name = _name;
         _info.price = _price;
     }
 
     public void BtnClickEvent()
     {
-        //OrderedList.Instance.AddOrder(_info);
+        if (UGUI_nameText.text.Contains("사이드"))
+        {
+
+            _info.additionMenuList = new List<AdditionMenu>();
+            OrderedList.Instance.AddOrder(_info);
+
+            return;
+        }
         AddMenuMgr.Instance.Init(UGUI_MenuImg.sprite, _info.name, _info.price);
 
     }

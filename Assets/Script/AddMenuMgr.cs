@@ -26,6 +26,8 @@ public class AddMenuMgr : MonoBehaviour
     public Text TotalPriceTxt;
 
     int curPrice = 0;
+    int originPrice = 0;
+    List<AddMenuObject> addMenuObjectList = new List<AddMenuObject>();
 
     void Awake()
     {
@@ -51,20 +53,26 @@ public class AddMenuMgr : MonoBehaviour
             var go = Instantiate(AddMenuPrefab).GetComponent<AddMenuObject>();
             string name = item.Name + "\n" + "+" + item.Price.ToString();
             go.SetInfo(name, item.Price, item.smallSprite);
+            
+            AdditionMenu m = new AdditionMenu(item.smallSprite, item.Name, item.Price);
+            go.SetInfo(m);
+
             go.transform.parent = content.transform;
             go.gameObject.SetActive(true);
+            addMenuObjectList.Add(go);
         }
     }
 
-    public void CheckingAdditionMenu(bool b, int price)
+    public void CheckingAdditionMenu(bool b, AdditionMenu menuInfo)
     {
         if (b)
         {
-            curPrice += price;
+            curPrice += menuInfo.price;
+    
         }
         else
         {
-            curPrice -= price;
+            curPrice -= menuInfo.price;
         }
 
         TotalPriceTxt.text = curPrice.ToString() + "원";
@@ -76,10 +84,10 @@ public class AddMenuMgr : MonoBehaviour
         SelectionMenuImage.sprite = _sprite;
         SelectionMenuNameTxt.text = name;
         SelectionMenuPriceTxt.text = price.ToString()+"원";
-
+        
         TotalPriceTxt.text = SelectionMenuPriceTxt.text;
         curPrice = price;
-
+        originPrice = price;
     }
 
     public void OkBtnClickEvent()
@@ -87,7 +95,22 @@ public class AddMenuMgr : MonoBehaviour
         OrderInfo _info = new OrderInfo();
         _info.name = SelectionMenuNameTxt.text;
         _info.price = curPrice;
+        _info.img =  SelectionMenuImage.sprite;
+        _info.additionMenuList = new List<AdditionMenu>();
+        _info.originPrice = originPrice;
+        foreach(var item in addMenuObjectList)
+        {
+            if(item.CheckImg.gameObject.activeSelf)
+                _info.additionMenuList.Add(item.info);
+        }
+        
         OrderedList.Instance.AddOrder(_info);
+        
+        // foreach(var item in _info.additionMenuList)
+        // {
+        //     Debug.Log(item.name + " " + item.price);
+        // }
+
         Panel.SetActive(false);
     }
 

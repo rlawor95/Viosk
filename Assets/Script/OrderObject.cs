@@ -17,6 +17,14 @@ public class OrderObject : MonoBehaviour
         _info.ID = info.ID;
         _info.name = info.name;
         _info.price = info.price;
+        _info.additionMenuList = info.additionMenuList;
+        _info.img = info.img;
+        _info.originPrice = info.originPrice;
+    }
+    
+    public void ClearData()
+    {
+        
     }
 
     public void RemoveClickEvent()

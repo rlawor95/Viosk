@@ -22,7 +22,41 @@ public class OrderedList : MonoBehaviour
             Instance = this;
     }
 
-  
+    public void ClearData()
+    {
+        _stackOrderRight.Clear();
+        _stackOrderLeft.Clear();
+        _queueNewOrder.Clear();
+        _orderObject1.gameObject.SetActive(false);
+        _orderObject2.gameObject.SetActive(false);
+    }
+
+     public void PaymentClickEvent()
+     {
+        List<OrderInfo> _list = new List<OrderInfo>();
+        foreach (var item in _stackOrderLeft)
+        {
+            _list.Add(item);
+        }
+
+        if (_orderObject1._info.price != 0)
+            _list.Add(_orderObject1.GetInfo());
+        if (_orderObject2._info.price != 0)
+            _list.Add(_orderObject2.GetInfo());
+
+        foreach (var item in _stackOrderRight)
+        {
+            _list.Add(item);
+        }
+        
+ 
+        MainProcess.Instance.PaymentPageInit(_list);
+     }
+
+    public int GetTotalPrice()
+    {
+        return 0;
+    }
 
     public void AddOrder(OrderInfo order)
     {
@@ -44,7 +78,6 @@ public class OrderedList : MonoBehaviour
             _queueNewOrder.Enqueue(order);
         }
 
-        Debug.Log("order _queueOrderRight count" + _queueNewOrder.Count);
     }
 
 
