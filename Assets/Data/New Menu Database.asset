@@ -15,50 +15,281 @@ MonoBehaviour:
   MenuCategory:
   - CategoryName: Recommend
     MenuArray:
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 999584055b6ac4ea98acd64e83903960, type: 3}
+      smallSprite: {fileID: 21300000, guid: 2e079cddd4b42425fb095f36f1bba478, type: 3}
       Name: "\uCD94\uCC9C A"
       Price: 12200
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: b3f2be96dc0ee420eb8c5a8b83bb49fa, type: 3}
+      smallSprite: {fileID: 21300000, guid: 8183e0e018a16497db6c35062082e846, type: 3}
       Name: "\uCD94\uCC9C B"
       Price: 11200
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 0a8490924cf3d4c439c9b36907e80bc0, type: 3}
+      smallSprite: {fileID: 21300000, guid: bf32bb05490e141ab8909c3d964436d3, type: 3}
       Name: "\uCD94\uCC9C C"
       Price: 9800
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 6c7df13f90f2e43fa9c4a35f28c9a76c, type: 3}
+      smallSprite: {fileID: 21300000, guid: a9e33156f675e484ca51d65c2c77bf76, type: 3}
       Name: "\uCD94\uCC9C D"
       Price: 9800
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: c354beca9dd98431381927bb989a027e, type: 3}
+      smallSprite: {fileID: 21300000, guid: c354beca9dd98431381927bb989a027e, type: 3}
       Name: "\uCD94\uCC9C E"
       Price: 9000
   - CategoryName: Limited
     MenuArray:
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 08d77cbd9d9eb4bcf80a5b3290ce406f, type: 3}
+      smallSprite: {fileID: 21300000, guid: 5450d75edc43841b8a7e072a9dc5027b, type: 3}
       Name: "\uAE30\uAC04 A"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: d2c6e20f8cbae475c8a81ece497d1698, type: 3}
+      smallSprite: {fileID: 21300000, guid: a20a03f41d53043f99daf89a096e2d87, type: 3}
       Name: "\uAE30\uAC04 B"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: fcf385580dce74042a4924da5ca0121a, type: 3}
+      smallSprite: {fileID: 21300000, guid: 29d593226fdeb4f9ab351e07427e705b, type: 3}
       Name: "\uAE30\uAC04 C"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: eb83066af94f9494f89734c20246c0fe, type: 3}
+      smallSprite: {fileID: 21300000, guid: 87c8c545f887242d3920f223290fd77e, type: 3}
       Name: "\uAE30\uAC04 D"
       Price: 11500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 4bf70995aff8f4d3a966ca898b7ce545, type: 3}
+      smallSprite: {fileID: 21300000, guid: 2289f0477b22143bb9872b373fdc4777, type: 3}
       Name: "\uAE30\uAC04 E"
       Price: 10500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 678c0f2c3a86a485fbb66b67a4b4d764, type: 3}
+      smallSprite: {fileID: 21300000, guid: 02004662b42ff4496a9eae3f6c55ff31, type: 3}
       Name: "\uAE30\uAC04 F"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 1dcbbb0b0d3454911b9ad38f27560cd1, type: 3}
+      smallSprite: {fileID: 21300000, guid: cc778fc8fb27b4b36bce63aeb853fe1f, type: 3}
       Name: "\uAE30\uAC04 G"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 40372372fa62144efb6466a82f4e8987, type: 3}
+      smallSprite: {fileID: 21300000, guid: 2fd1aeadc74894ce8b54e2869b8ffbc8, type: 3}
       Name: "\uAE30\uAC04 H"
       Price: 12500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: dc5bd1998a9784f748a1f94673abbe45, type: 3}
+      smallSprite: {fileID: 21300000, guid: 0d7853a52db4b4f63b8db7ad9b778358, type: 3}
       Name: "\uAE30\uAC04 I"
       Price: 14500
-    - Spritename: 
+    - bigSprite: {fileID: 21300000, guid: 8462bc418bc34407b8ded9b0f8942379, type: 3}
+      smallSprite: {fileID: 21300000, guid: 5a85f85ed4d0c4c74bf97e72a04ce405, type: 3}
       Name: "\uAE30\uAC04 J"
       Price: 15500
+  - CategoryName: Set
+    MenuArray:
+    - bigSprite: {fileID: 21300000, guid: a2055d56d41f44e9cb495ebbf006bba5, type: 3}
+      smallSprite: {fileID: 21300000, guid: ff9149baff090454ab37cdc786727d8c, type: 3}
+      Name: "\uC138\uD2B8 A"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: 1237ab2abe01d49049118a861184519d, type: 3}
+      smallSprite: {fileID: 21300000, guid: 1253b4f59051842ba844f9c4935973ac, type: 3}
+      Name: "\uC138\uD2B8 B"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: 3b7ea8a0680104f13929a1882b7cb9a4, type: 3}
+      smallSprite: {fileID: 21300000, guid: 13dc49a6824ee47d9aa304ca18705f00, type: 3}
+      Name: "\uC138\uD2B8 C"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: b9d5d8da6199147d9a2d5ed51986f0f2, type: 3}
+      smallSprite: {fileID: 21300000, guid: 2133d83ff7c6e4f1e8dd4ef56970e539, type: 3}
+      Name: "\uC138\uD2B8 D"
+      Price: 11500
+    - bigSprite: {fileID: 21300000, guid: ba923994f7744492195f3891bff9f4d2, type: 3}
+      smallSprite: {fileID: 21300000, guid: 36214229242154af9913a5d8e479591a, type: 3}
+      Name: "\uC138\uD2B8 E"
+      Price: 10500
+    - bigSprite: {fileID: 21300000, guid: 664864000616547e2bf5d80e197edab4, type: 3}
+      smallSprite: {fileID: 21300000, guid: 0669883e381ee4c9b85867b19c6e5e58, type: 3}
+      Name: "\uC138\uD2B8 F"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: b276a74e567a442cdbb6dcce753e5324, type: 3}
+      smallSprite: {fileID: 21300000, guid: 58cbb01cd0b904e1fb469882af59d81f, type: 3}
+      Name: "\uC138\uD2B8 G"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: 0d1c416c7382b421e862060c2c08b72d, type: 3}
+      smallSprite: {fileID: 21300000, guid: 808e56bef36324f01a142af7e58f508d, type: 3}
+      Name: "\uC138\uD2B8 H"
+      Price: 12500
+    - bigSprite: {fileID: 21300000, guid: 5ac6b93a7c8c2422098e76a5c14b276f, type: 3}
+      smallSprite: {fileID: 21300000, guid: fbd0b2a0f204f415b9a24d049def0abd, type: 3}
+      Name: "\uC138\uD2B8 I"
+      Price: 14500
+    - bigSprite: {fileID: 21300000, guid: 52f5a6cbc6eac4288b56d796eb88ca57, type: 3}
+      smallSprite: {fileID: 21300000, guid: 64269eb1e999f4421b69d63d29549a8b, type: 3}
+      Name: "\uC138\uD2B8 J"
+      Price: 15500
+  - CategoryName: BurgerOnly
+    MenuArray:
+    - bigSprite: {fileID: 21300000, guid: 839195180d52e45e88d9a1dfb7d2d60e, type: 3}
+      smallSprite: {fileID: 21300000, guid: f3eabc86e09cc456c8d2355a735a3e75, type: 3}
+      Name: "\uBC84\uAC70 A"
+      Price: 8500
+    - bigSprite: {fileID: 21300000, guid: 66e73b84d285b481c9099b7142629373, type: 3}
+      smallSprite: {fileID: 21300000, guid: 19c2cdfa2623c4ba184b57b74258fefb, type: 3}
+      Name: "\uBC84\uAC70 B"
+      Price: 9200
+    - bigSprite: {fileID: 21300000, guid: 14727b03345824bb4a3c3031593f6e4e, type: 3}
+      smallSprite: {fileID: 21300000, guid: b7384114f815a4d6391283b4cf0f4be6, type: 3}
+      Name: "\uBC84\uAC70 C"
+      Price: 9200
+    - bigSprite: {fileID: 21300000, guid: 5110e010db2e54d5b8d11b3fbaedbb6f, type: 3}
+      smallSprite: {fileID: 21300000, guid: e06b82af990cc4803996677cc1394ddc, type: 3}
+      Name: "\uBC84\uAC70 D"
+      Price: 8700
+    - bigSprite: {fileID: 21300000, guid: a5df202f01a0b4ca4a39b71794cceff0, type: 3}
+      smallSprite: {fileID: 21300000, guid: 5d2bc6d630acd4ed79c0c6c88bc3165e, type: 3}
+      Name: "\uBC84\uAC70 E"
+      Price: 7500
+    - bigSprite: {fileID: 21300000, guid: c6e58bb339f5946629e242ee83c616fd, type: 3}
+      smallSprite: {fileID: 21300000, guid: 174b1d7bd817e4a32bc581f30e2bddba, type: 3}
+      Name: "\uBC84\uAC70 F"
+      Price: 7500
+    - bigSprite: {fileID: 21300000, guid: bef20c95a003f4ad18f65f7e82b4d86f, type: 3}
+      smallSprite: {fileID: 21300000, guid: 5dec72e63e6634c3f88c687205fc641d, type: 3}
+      Name: "\uBC84\uAC70 G"
+      Price: 7500
+  - CategoryName: Side
+    MenuArray:
+    - bigSprite: {fileID: 21300000, guid: 905aa4a4a3a0e4c9ba6a22245d6b485b, type: 3}
+      smallSprite: {fileID: 21300000, guid: e600249f6fce24caf845f297354c4327, type: 3}
+      Name: "\uC0AC\uC774\uB4DC A"
+      Price: 2500
+    - bigSprite: {fileID: 21300000, guid: f343442627e9840adaee751b987e0566, type: 3}
+      smallSprite: {fileID: 21300000, guid: 48f416fa2701f46e3857aeefa795cccc, type: 3}
+      Name: "\uC0AC\uC774\uB4DC B"
+      Price: 2500
+    - bigSprite: {fileID: 21300000, guid: 403ed6f3cab5d4e7cbb756d9ef53c53d, type: 3}
+      smallSprite: {fileID: 21300000, guid: c6405c931215a4b2c91b6ea6e3d6c544, type: 3}
+      Name: "\uC0AC\uC774\uB4DC C"
+      Price: 2500
+    - bigSprite: {fileID: 21300000, guid: 596b501371e534b30bede5b1b127f551, type: 3}
+      smallSprite: {fileID: 21300000, guid: 34f8700c2a22e4e839c47b44321c7451, type: 3}
+      Name: "\uC0AC\uC774\uB4DC D"
+      Price: 2500
+    - bigSprite: {fileID: 21300000, guid: 2bdbe54bb929f4714b3e838d92a5e659, type: 3}
+      smallSprite: {fileID: 21300000, guid: 23ff74f691e504757827a68469526278, type: 3}
+      Name: "\uC0AC\uC774\uB4DC E"
+      Price: 2200
+    - bigSprite: {fileID: 21300000, guid: ac5596b536a7240578f657bbbbccd7b2, type: 3}
+      smallSprite: {fileID: 21300000, guid: d10ab132c8a8847d987653d7fe159d94, type: 3}
+      Name: "\uC0AC\uC774\uB4DC F"
+      Price: 2200
+    - bigSprite: {fileID: 21300000, guid: 43a1c6c76880345b6bc89fa2dd4dfd39, type: 3}
+      smallSprite: {fileID: 21300000, guid: c238ac570dd4f45b7817608cd10ab18e, type: 3}
+      Name: "\uC0AC\uC774\uB4DC G"
+      Price: 2000
+    - bigSprite: {fileID: 21300000, guid: 21200c2b2cd1a433dbde3538647c2242, type: 3}
+      smallSprite: {fileID: 21300000, guid: cf648265caf2a48ce8fd8fbbf66609b1, type: 3}
+      Name: "\uC0AC\uC774\uB4DC H"
+      Price: 2000
+    - bigSprite: {fileID: 21300000, guid: 8350d7fb07bdb4a9fb836bca4eb6f4bb, type: 3}
+      smallSprite: {fileID: 21300000, guid: b1e8a48174bd14dbd8eff122e3efdcb3, type: 3}
+      Name: "\uC0AC\uC774\uB4DC I"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: c6180dd6d64914c8aaa6abc631df43ef, type: 3}
+      smallSprite: {fileID: 21300000, guid: 0688f880c87994682a947d7c48f46f33, type: 3}
+      Name: "\uC0AC\uC774\uB4DC J"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: 71e5fc2eb72f44514bc55367475565c0, type: 3}
+      smallSprite: {fileID: 21300000, guid: 634f2c506db564e99ae2db4f1f5d4e7c, type: 3}
+      Name: "\uC0AC\uC774\uB4DC K"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: cd4e835e0045c426ea4cc270ad51297e, type: 3}
+      smallSprite: {fileID: 21300000, guid: 6b1406d30fec44e109dbbffc1efdf56b, type: 3}
+      Name: "\uC0AC\uC774\uB4DC L"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: cf2ddfcdf73a14477a4537491217be08, type: 3}
+      smallSprite: {fileID: 21300000, guid: 6889468ae7c704ad39b0cacc0fed5f50, type: 3}
+      Name: "\uC0AC\uC774\uB4DC M"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: 0b5cb382db5f8481a9fbd79cb26aec7d, type: 3}
+      smallSprite: {fileID: 21300000, guid: 84a90188d48724467a65caa1539ff122, type: 3}
+      Name: "\uC0AC\uC774\uB4DC N"
+      Price: 1000
+    - bigSprite: {fileID: 21300000, guid: f4bc3b006ac254ce185a7f80766addaa, type: 3}
+      smallSprite: {fileID: 21300000, guid: 5babb80ea49524f51a4896ec28f0ccf6, type: 3}
+      Name: "\uC0AC\uC774\uB4DC O"
+      Price: 1000
+  - CategoryName: Gradiant
+    MenuArray:
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 228203e229d2c43e1803ad445e8fee36, type: 3}
+      Name: "\uC7AC\uB8CC A"
+      Price: 600
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 48f9b345e9ff04b3083d1a47dd1e30dd, type: 3}
+      Name: "\uC7AC\uB8CC B"
+      Price: 600
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 8fee3f02026cd4fe38e9ec88e2a63b96, type: 3}
+      Name: "\uC7AC\uB8CC C"
+      Price: 1000
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 54ab820331d7640ffba02b8c3660b0c4, type: 3}
+      Name: "\uC7AC\uB8CC D"
+      Price: 1000
+  - CategoryName: Fry
+    MenuArray:
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: df7b78077eb414e15841aafb4d98f617, type: 3}
+      Name: "\uD504\uB77C\uC774 A"
+      Price: 1000
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 7a4cca49d3df9467aaf0d7e13f658a38, type: 3}
+      Name: "\uD504\uB77C\uC774 B"
+      Price: 1200
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 1dc4d17dd1a7d4568bf27788ed5b126f, type: 3}
+      Name: "\uD504\uB77C\uC774 C"
+      Price: 1500
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 9ecf8937d8bc641578e15228174a321e, type: 3}
+      Name: "\uD504\uB77C\uC774 D"
+      Price: 2000
+  - CategoryName: Drink
+    MenuArray:
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: a89926289e41a4a2a8cfee4e4c662187, type: 3}
+      Name: "\uC74C\uB8CC A"
+      Price: 1000
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 2d0559bfc0ac94f558cb721d6d2eba5d, type: 3}
+      Name: "\uC74C\uB8CC B"
+      Price: 1000
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 6a954451a344d4de0ae3f6ed8a1de60b, type: 3}
+      Name: "\uC74C\uB8CC C"
+      Price: 1000
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: c3e8dfcc746d64c248aa346d44145ff3, type: 3}
+      Name: "\uC74C\uB8CC D"
+      Price: 1000
+  - CategoryName: Sauce
+    MenuArray:
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: 90f3f5745ef514445b26dda33790e20e, type: 3}
+      Name: "\uC18C\uC2A4 A"
+      Price: 500
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: bd0179ea73f5f41ef822045fea2ca12f, type: 3}
+      Name: "\uC18C\uC2A4 B"
+      Price: 500
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: f99b8872d7e8c4dada0afaa2fca5e31e, type: 3}
+      Name: "\uC18C\uC2A4 C"
+      Price: 500
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: f853c1d495d01406f90014379a61a51a, type: 3}
+      Name: "\uC18C\uC2A4 D"
+      Price: 500
+  - CategoryName: Size
+    MenuArray:
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: f83ff7795b30f41508cfe3ea39f3f659, type: 3}
+      Name: "\uC608"
+      Price: 500
+    - bigSprite: {fileID: 0}
+      smallSprite: {fileID: 21300000, guid: ed334c9c02adf43c49017ffac1e558ac, type: 3}
+      Name: "\uC544\uB2C8\uC624"
+      Price: 0

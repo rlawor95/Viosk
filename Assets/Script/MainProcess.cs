@@ -9,12 +9,15 @@ public class MainProcess : MonoBehaviour
 
     public void Over50_BtnClickEvent()
     {
-
+        Page1.SetActive(false);
+        Page2_50Under.SetActive(true);
+        MenuList.Instance.SetMode(Mode.BIG);
     }
 
     public void Under50_BtnClickEvent()
     {
         Page1.SetActive(false);
         Page2_50Under.SetActive(true);
+        MenuList.Instance.SetMode(Mode.SMALL);
     }
 }

@@ -15,7 +15,8 @@ public class MenuDatabase : ScriptableObject
     [System.Serializable]
     public class DBEntry
     {
-        public string Spritename;
+        public Sprite bigSprite;
+        public Sprite smallSprite;
         public string Name;
         public int Price;
     }

@@ -35,6 +35,7 @@ public class MenuObject : MonoBehaviour
         if (_icon != null)
         {
             UGUI_MenuImg.sprite = _icon;
+            UGUI_MenuImg.SetNativeSize();
         }
 
         _info.name = _name;
@@ -43,7 +44,9 @@ public class MenuObject : MonoBehaviour
 
     public void BtnClickEvent()
     {
-        OrderedList.Instance.AddOrder(_info);
+        //OrderedList.Instance.AddOrder(_info);
+        AddMenuMgr.Instance.Init(UGUI_MenuImg.sprite, _info.name, _info.price);
+
     }
 
 }
